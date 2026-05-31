@@ -6,11 +6,11 @@ import (
 
 // TodoUsecase provides the business logic for todos.
 type TodoUsecase struct {
-	repo domain.TodoRepository
+	repo domain.TodoRepositoryInterface
 }
 
 // NewTodoUsecase creates a new TodoUsecase.
-func NewTodoUsecase(repo domain.TodoRepository) *TodoUsecase {
+func NewTodoUsecase(repo domain.TodoRepositoryInterface) *TodoUsecase {
 	return &TodoUsecase{repo: repo}
 }
 

@@ -22,11 +22,11 @@ graph TD
     Infrastructure --> Domain
 ```
 
-
 ### How to Run
 
 To run the ToDo application, use the following command from the `api-layer` directory:
 
 ```bash
+cd api-layer
 go run ./todo/main.go
 ```

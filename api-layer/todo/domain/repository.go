@@ -1,7 +1,7 @@
 package domain
 
-// TodoRepository is an interface for a repository that stores todos.
-type TodoRepository interface {
+// TodoRepositoryInterface is an interface for a repository that stores todos.
+type TodoRepositoryInterface interface {
 	GetAll() ([]*Todo, error)
 	GetByID(id int) (*Todo, error)
 	Create(todo *Todo) error
